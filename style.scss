@@ -1,4 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.extra-padding-center{
+  padding: 30px 390px 210px 390px;
+}
+
+.header-banner{
+  background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
+  color: white;
+  font-size: 1rem;
+  .header{
+    nav{
+      justify-content: space-between;
+      display: flex;
+      .logo{
+        display: flex;
+        h1{
+          font-size: 36px;
+          font-family: 'Dosis', sans-serif;
+        }
+      }
+      .nav-panel{
+        ul {
+          list-style: none;
+          display: flex;
+          li {
+            margin: auto;
+            justify-content: space-around;
+            padding: 0 30px;
+          }
+          button{
+            background-color: white;
+            color: black;
+            border: 0;
+            padding: 10.5px 30px;
+            border-radius: 35px;
+            font-size: 14px;
+            outline: none;
+            font-weight: 600;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .banner{
+    .banner-content{
+      padding-top: 150px;
+      width: 50%;
+      h1{
+        font-family: 'Dosis', sans-serif;
+        font-size: 54px;
+        font-weight: 600;
+      }
+      p{
+        padding-top: 27px;
+        font-weight: 100;
+      }
+      ul{
+        padding-top: 30px;
+        list-style: inside;
+        li {
+          padding-top: 20px;
+          font-weight: 400;
+        }
+
+      }
+      button{
+        margin-top: 40px;
+        border-radius: 35px;
+        font-weight: 500;
+        border: 5px solid #e2602d;
+        padding: 12px 40px;
+      }
+    }
+  }
+}
+
+.features{
+  ul {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 360px;
+
+      .feature-element{
+        display: flex;
+        margin-right: 30px;
+        margin-bottom: 50px;
+        .feature-image{
+          margin: auto;
+          margin-right: 20px;
+          padding: 25px 25px;
+          border: 1px solid #eeeeee;
+          border-radius: 37.5px;
+          width: 15px;
+          height: 15px;
+        }
+        .feature-description{
+          h1{
+            font-size: 24px;
+            padding-bottom: 15px;
+          }
+          h5{
+            font-size: 14px;
+            color: #777777;
+            font-weight: 300;
+          }
+        }
+      }
+      .feature-element:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  hr {
+    border: none;
+    color: #eeeeee;
+    background-color: #eeeeee;
+    height: 2px;
+  }
 }
