@@ -256,3 +256,72 @@
     }
   }
 }
+
+.pricing{
+  padding-top: 130px;
+  text-align: center;
+  h1 {
+    font-size: 36px;
+    font-family: 'Dosis' sans-serif;
+  }
+  h6{
+    font-family: 'Roboto' sans-serif;
+    font-size: 14px;
+    padding-top: 30px;
+    font-weight: 400;
+    color: #777777;
+  }
+  .card-list{
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      list-style: none;
+
+    }
+    .card{
+      min-width: 260px;
+      min-height: 480px;
+    }
+  }
+}
+
+.video{
+  background-image: url('./images/video.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  .video-player{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    button {
+      width: 75px;
+      height: 75px;
+      border: 0;
+      border-radius: 37.5px;
+      background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
+      position: absolute;              
+      top: 50%;                        
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.testimonials{
+  padding-top: 130px;
+  text-align: center;
+  h1 {
+    font-size: 36px;
+    font-family: 'Dosis' sans-serif;
+  }
+  h6{
+    font-family: 'Roboto' sans-serif;
+    font-size: 14px;
+    padding-top: 30px;
+    font-weight: 400;
+    color: #777777;
+  }
+}
