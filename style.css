@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +7,19 @@
   font-size: 14px;
 }
 
-.extra-padding-center {
+section {
   padding: 30px 390px 210px 390px;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
+/*
+.extra-padding-center{
+  padding: 30px 390px 210px 390px;
+}
+*/
 .header-banner {
   background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
   color: white;
@@ -166,7 +175,7 @@
   padding-bottom: 30px;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Dosis" sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 .screen_shots p {
   font-size: 14px;
@@ -243,14 +252,15 @@
 
 .pricing {
   padding-top: 130px;
+  padding-bottom: 120px !important;
   text-align: center;
 }
 .pricing h1 {
   font-size: 36px;
-  font-family: "Dosis" sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 .pricing h6 {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-top: 30px;
   font-weight: 400;
@@ -259,13 +269,96 @@
 .pricing .card-list {
   display: flex;
   flex-wrap: wrap;
-}
-.pricing .card-list ul {
-  list-style: none;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 .pricing .card-list .card {
   min-width: 260px;
   min-height: 480px;
+  background-color: #f7fafc;
+}
+.pricing .card-list .card .card-title p {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  padding: 12px 0;
+}
+.pricing .card-list .card ul {
+  list-style: none;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.pricing .card-list .card ul li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #eeeeee;
+}
+.pricing .card-list .card ul li:last-child {
+  border-bottom: 0;
+}
+.pricing .card-list .card .price {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  background-color: white;
+  justify-content: center;
+}
+.pricing .card-list .card .price p {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+.pricing .card-list .card .price .dollar {
+  margin-top: 4.5px;
+  font-size: 0.45em;
+}
+.pricing .card-list .card .price .months {
+  margin-top: 17px;
+  font-size: 0.5em;
+}
+.pricing .card-list .card .start {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+.pricing .card-list .card .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 130px 0 130px;
+  border-color: #fff transparent transparent transparent;
+}
+.pricing .card-list .card button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 75px;
+  border: 1px solid #eee;
+  width: 135px;
+  height: 40px;
+}
+.pricing .card-list .best {
+  -webkit-box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+}
+.pricing .card-list .best p {
+  color: white;
+}
+.pricing .card-list .best .price {
+  background-color: #f7fafc;
+  background-image: url("./images/bg-gradient.svg");
+  background-repeat: no-repeat;
+  height: 75px;
+}
+.pricing .card-list .best button {
+  background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
+  color: white;
+  border: 3px solid #eee;
 }
 
 .video {
@@ -299,14 +392,150 @@
 }
 .testimonials h1 {
   font-size: 36px;
-  font-family: "Dosis" sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 .testimonials h6 {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-top: 30px;
   font-weight: 400;
   color: #777777;
+}
+.testimonials .slider {
+  margin-top: 30px;
+}
+.testimonials .slider .btn {
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #eeeeee;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.testimonials .slider .right-btn {
+  background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
+  left: 630px;
+  bottom: 160px;
+}
+.testimonials .slider .left-btn {
+  bottom: -160px;
+  left: -630px;
+  background-image: url("./images/left-arrow-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.testimonials .slider .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials .slider .cards .card {
+  width: 360px;
+  height: 275px;
+  background-color: #f7fafc;
+}
+.testimonials .slider .cards .card .content {
+  padding: 40px !important;
+  align-items: space-between;
+}
+.testimonials .slider .cards .card .content .bottom-part {
+  display: flex;
+  position: relative;
+  top: 40px;
+}
+.testimonials .slider .cards .card .content .bottom-part h1 {
+  font-size: 18px;
+  font-family: "Dosis", sans-serif;
+  text-align: left;
+  margin-top: 15px;
+}
+.testimonials .slider .cards .card .content .bottom-part .about {
+  margin-left: 20px;
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.testimonials .slider .cards .card .content .bottom-part .about p {
+  margin-top: 5px;
+}
+.testimonials .slider .cards .card p {
+  height: 80px;
+  font-weight: 300;
+  color: #777777;
+  text-align: left;
+}
+.testimonials .slider .cards .center {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 9px 24px 0px rgba(34, 60, 80, 0.2);
+}
+
+.download {
+  padding-top: 130px;
+  padding-bottom: 120px !important;
+  background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
+}
+.download h1.title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 90px;
+  font-weight: 600;
+}
+.download .button-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.download .button-menu .button {
+  width: 360px;
+  height: 115px;
+  display: flex;
+  background-color: white;
+}
+.download .button-menu .button .icon {
+  width: 115px;
+  background-color: #f7fafc;
+  text-align: center;
+  padding-top: 17px;
+}
+.download .button-menu .button .description {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+.download .button-menu .button .description h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.download .button-menu .button .description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  padding-top: 10px;
+}
+
+.footer {
+  background-color: #222222;
+  padding: 60px 0;
+  text-align: center;
+}
+.footer ul {
+  padding-bottom: 30px;
+  list-style: none;
+  display: flex;
+  width: 165px;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
