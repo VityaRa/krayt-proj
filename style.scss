@@ -120,8 +120,9 @@ section{
           font-family: "Font Awesome 5 Free";
           text-align: center;
           img {
-            width: 100%;
-            height: 100%;
+            width: 75%;
+            height: 75%;
+            margin-top: 3px;
           }
         }
         .feature-description{
@@ -150,6 +151,20 @@ section{
   padding-top: 120px;
   display: flex;
 
+  .dont_leave-image{
+    background-image: url('./images/dont-leave-image.png');
+    background-repeat: no-repeat;
+    width: 362px;
+    height: 469px;
+  }
+  .dont_leave-shadow{
+    opacity: 0;
+    height: 1px;
+    width: 100px;
+    -webkit-box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
+  }
   .dont_leave-text{
     padding-left: 225px;
     h1{
@@ -168,11 +183,13 @@ section{
       padding-bottom: 80px !important;
     }
     ul {
-      list-style: inside;
+      list-style-position: inside;
+      list-style-image: url('./images/dont-leave-list.svg');
       li {
         color: #777777;
         font-size: 14px;
         font-weight: 600;
+        padding-bottom: 10px;
       }
     }
     
@@ -391,17 +408,24 @@ section{
     height: 400px;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
-    text-align: center;
-    button {
-      width: 75px;
-      height: 75px;
-      border: 0;
-      border-radius: 37.5px;
-      background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
-      position: absolute;              
-      top: 50%;                        
-      transform: translate(0, -50%);
+    .wrap-btn{
+      height: 100%;
+      text-align: center;
+      button {
+        width: 75px;
+        height: 75px;
+        border: 0;
+        border-radius: 37.5px;
+        background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
+        position: relative;
+        margin-top: 162.5px;
+        text-align: center;
+        img {
+          margin-top: 4px;
+        }
+      }
     }
+    
   }
 }
 
@@ -430,10 +454,15 @@ section{
       background-color: rgba(0,0,0,0);
     }
     .right-btn{
-      background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
+      background:  linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
       left: 630px;
       bottom: 160px;
-
+      background-repeat: no-repeat;
+      background-position: center;
+      img {
+        text-align: center;
+        margin-bottom: 1.2px;
+      }
     }
     .left-btn{
       bottom: -160px;
