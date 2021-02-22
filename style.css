@@ -11,7 +11,7 @@ section {
   padding: 30px 390px 210px 390px;
 }
 
-.no-padding {
+section.no-padding {
   padding: 0 !important;
 }
 
@@ -24,6 +24,11 @@ section {
   background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
   color: white;
   font-size: 1rem;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+}
+.header-banner .header {
+  padding-right: 390px !important;
 }
 .header-banner .header nav {
   justify-content: space-between;
@@ -56,9 +61,17 @@ section {
   font-weight: 600;
   margin-left: 20px;
 }
+.header-banner .banner .phone-images {
+  background-image: url("./images/banner-phone-images.png");
+  margin-left: 60px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
 .header-banner .banner .banner-content {
   padding-top: 150px;
-  width: 50%;
+  width: 100%;
+  display: flex;
 }
 .header-banner .banner .banner-content h1 {
   font-family: "Dosis", sans-serif;
@@ -145,14 +158,6 @@ section {
   width: 362px;
   height: 469px;
 }
-.dont_leave .dont_leave-shadow {
-  opacity: 0;
-  height: 1px;
-  width: 100px;
-  -webkit-box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 4px 84px 35px rgba(34, 60, 80, 0.2);
-}
 .dont_leave .dont_leave-text {
   padding-left: 225px;
 }
@@ -183,10 +188,9 @@ section {
 }
 
 .screen_shots {
+  padding: 120px 0 !important;
   background-color: #f7fafc;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .screen_shots h1 {
   padding-bottom: 30px;
@@ -202,7 +206,9 @@ section {
   padding-bottom: 80px;
 }
 .screen_shots .portfolio {
+  position: relative;
   display: flex;
+  justify-content: center;
 }
 .screen_shots .portfolio .card {
   -webkit-box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
@@ -216,7 +222,6 @@ section {
   position: relative;
   height: 500px;
   z-index: 1004;
-  transform: translateX(-687px);
   background-image: url("./images/center.png");
 }
 .screen_shots .portfolio .second-card {
@@ -237,33 +242,33 @@ section {
   z-index: 1001;
 }
 .screen_shots .portfolio .left-card-2 {
-  transform: translateX(-522px);
+  transform: translateX(170px);
   background-image: url("./images/left-1.png");
 }
 .screen_shots .portfolio .left-card-3 {
   background-image: url("./images/left-2.png");
-  transform: translateX(-292px);
+  transform: translateX(403px);
 }
 .screen_shots .portfolio .left-card-4 {
   background-image: url("./images/left-3.png");
-  transform: translateX(0);
+  transform: translateX(697px);
 }
 .screen_shots .portfolio .right-card-2 {
   background-image: url("./images/right-1.png");
-  transform: translateX(-852px);
+  transform: translateX(-170px);
   background-repeat: no-repeat;
   background-position-x: right;
 }
 .screen_shots .portfolio .right-card-3 {
   background-image: url("./images/right-2.png");
-  transform: translateX(-1087px);
+  transform: translateX(-403px);
   background-repeat: no-repeat;
   background-position-x: right;
 }
 .screen_shots .portfolio .right-card-4 {
   background-image: url("./images/right-3.png");
   background-repeat: no-repeat;
-  transform: translateX(-1379px);
+  transform: translateX(-697px);
   background-position-x: right;
 }
 
@@ -427,25 +432,6 @@ section {
 .testimonials .slider {
   margin-top: 30px;
 }
-.testimonials .slider .btn {
-  position: relative;
-  border-radius: 20px;
-  border: 2px solid #eeeeee;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0);
-}
-.testimonials .slider .right-btn {
-  background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
-  left: 630px;
-  bottom: 160px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.testimonials .slider .right-btn img {
-  text-align: center;
-  margin-bottom: 1.2px;
-}
 .testimonials .slider .left-btn {
   bottom: -160px;
   left: -630px;
@@ -565,6 +551,45 @@ section {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+.btn {
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #eeeeee;
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.right-btn {
+  background: linear-gradient(90deg, #fd712c 0%, #f31f79 100%);
+  left: 630px;
+  bottom: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.right-btn img {
+  text-align: center;
+  margin-bottom: 1.2px;
+}
+
+.left-btn {
+  bottom: -160px;
+  left: -630px;
+  background-image: url("./images/left-arrow-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-btn.port-btn {
+  bottom: 260px;
+}
+
+.left-btn.port-btn {
+  bottom: -260px;
 }
 
 /*# sourceMappingURL=style.css.map */
