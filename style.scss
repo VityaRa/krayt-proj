@@ -86,8 +86,10 @@ section.no-padding{
         font-weight: 100;
       }
       ul{
+        list-style-position: inside;
+        list-style: white;
+        list-style-image: url(./images/header-list.svg);
         padding-top: 30px;
-        list-style: inside;
         li {
           padding-top: 20px;
           font-weight: 400;
@@ -159,13 +161,21 @@ section.no-padding{
   }
 }
 
+.dont_leave > * {
+  text-align: left;
+}
+
 .dont_leave{
   padding-top: 120px;
   display: flex;
+  justify-content: center;
+  padding-left: 30px !important;
+  padding-right: 0 !important;
 
   .dont_leave-image{
     background-image: url('./images/dont-leave-image.png');
     background-repeat: no-repeat;
+    background-position: center;
     width: 362px;
     height: 469px;
   }
@@ -292,7 +302,7 @@ section.no-padding{
   padding-top: 130px;
   padding-bottom: 120px !important;
   text-align: center;
-  
+  padding: 130px 0 120px 0;
   h1 {
     font-size: 36px;
     font-family: 'Dosis', sans-serif;
@@ -309,11 +319,12 @@ section.no-padding{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 80px;
-
+    justify-content:center;
     .card{
       min-width: 260px;
       min-height: 480px;
       background-color: #f7fafc;
+      margin-right: 30px;
       .card-title{
         p{
           font-family: 'Dosis', sans-serif;
@@ -438,6 +449,8 @@ section.no-padding{
 .testimonials{
   padding-top: 130px;
   text-align: center;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
   h1 {
     font-size: 36px;
     font-family: 'Dosis', sans-serif;
@@ -451,6 +464,7 @@ section.no-padding{
   }
   .slider{
     margin-top: 30px;
+
     .left-btn{
       bottom: -160px;
       left: -630px;
@@ -459,15 +473,16 @@ section.no-padding{
       background-position: center;
     }
     .cards{
+      width: 1160px;
       display: flex;
       justify-content: space-between;
+      margin: 0 auto;
       .card{
         width: 360px;
         height: 275px;
         background-color: #f7fafc;
         .content{
           padding: 40px !important;
-          align-items: space-between;
           .bottom-part{
             display: flex;
             position: relative;
@@ -509,6 +524,8 @@ section.no-padding{
 .download{
   padding-top: 130px;
   padding-bottom: 120px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   background: linear-gradient(90deg, rgba(253,113,44,1) 0%, rgba(243,31,121,1) 100%);
   h1.title {
     text-align: center;
@@ -518,11 +535,13 @@ section.no-padding{
     margin-bottom: 90px;
     font-weight: 600;
   }
+
   .button-menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     .button{
+      margin-right: 30px;
       width: 360px;
       height: 115px;
       display: flex;
@@ -551,6 +570,9 @@ section.no-padding{
         }
       }
     }
+  }
+  .button:last-child {
+    margin-right: 0 !important;
   }
 }
 
@@ -610,3 +632,230 @@ section.no-padding{
 .left-btn.port-btn{
   bottom: -260px;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1520px) {
+  .features {
+    text-align: center !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .features > ul {
+    text-align: left !important;
+    justify-content: space-around;
+  }
+  .card-list .card {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .header-banner {
+    //padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .testimonials .slider .cards .card:first-child {
+    display: none;
+  }
+  .testimonials .slider .cards .card:last-child {
+    display: none;
+  }
+  .testimonials .slider .cards{
+    justify-content: center;
+  }
+  .testimonials .slider {
+    display: flex;
+    width: 570px;
+    margin: 60px auto 0 auto;
+  }
+  .testimonials .slider .right-btn, .testimonials .slider .left-btn{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+  }
+  .header-banner .banner .phone-images {
+    display: none;
+  }
+  .header-banner {
+    padding-left: 0 !important;
+  }
+  .header-banner .header {
+    padding-right: 0 !important; 
+    nav {
+      justify-content: center;
+    }
+  }
+  .banner-content {
+    padding-top: 100px !important;
+    padding-bottom: 60px;
+    display: block;
+    .banner-about {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      p {
+        width: 360px;
+        margin: auto;
+      }
+    }
+
+  }
+
+
+  .portfolio-slider {
+    width: 570px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    .btn {
+      margin: auto;
+    }
+    .right-btn {
+      left: 0 !important;
+      bottom: 0 !important;
+    }
+    .left-btn {
+      left: 0 !important;
+      bottom: 0 !important;
+
+    }
+  }
+  .portfolio .card:not(.first-card) {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1156px) {
+  .download .button {
+    margin-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .dont_leave {
+    justify-content: space-around;
+  }
+  .dont_leave .dont_leave-text {
+    padding-left: 0 !important;
+  }
+  .download .button-menu {
+    display: block;
+    margin-right: 0 !important;
+  }
+  .download .button-menu .button{
+    margin: 60px auto 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .dont_leave {
+    display: block;
+    justify-content: center;
+    padding-left: 0 !important;
+  }
+  .dont_leave > *{
+    margin: 0 auto;
+    width: 361px;
+  }
+  .dont_leave-text {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .download .button {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .header nav{
+    display: block !important;
+    .logo {
+      width: 100px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+    ul {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .testimonials .slider, .testimonials .slider .cards {
+    width: 100%;
+  }
+  .testimonials .slider .right-btn, .testimonials .slider .left-btn{
+    display: none;
+  }
+  .portfolio-slider .right-btn, .left-btn {
+    display: none;
+  }
+  .portfolio-slider {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .header nav ul{
+      display: block !important;
+      text-align: center;
+      li {
+        margin-top: 10px !important;
+      }
+      button {
+        margin-left: 0 !important;
+        margin-top: 30px;
+      };
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .card-list .card {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .dont_leave-text {
+    width: 100%;
+    h1 { 
+      text-align: center;
+    }
+  }
+  .dont_leave-text > * {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .dont_leave-image {
+    width: 100% !important;
+  }
+
+}
+
+@media screen and (max-width: 365px) {
+  .download .button-menu .button {
+    width: 100% !important;
+  }
+  .screen_shots .portfolio .first-card {
+    min-width: 100%;
+  }
+}
+
+
