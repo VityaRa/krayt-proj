@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +86,7 @@ section.no-padding {
 .header-banner .banner .banner-content ul {
   list-style-position: inside;
   list-style: white;
-  list-style-image: url(./images/header-list.svg);
+  list-style-image: url(./images/header-list.png);
   padding-top: 30px;
 }
 .header-banner .banner .banner-content ul li {
@@ -188,7 +189,7 @@ section.no-padding {
 }
 .dont_leave .dont_leave-text ul {
   list-style-position: inside;
-  list-style-image: url("./images/dont-leave-list.svg");
+  list-style-image: url("./images/dont-leave-list.png");
 }
 .dont_leave .dont_leave-text ul li {
   color: #777777;
@@ -224,7 +225,7 @@ section.no-padding {
   -webkit-box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
-  min-width: 360px;
+  min-width: 350px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -450,7 +451,7 @@ section.no-padding {
 .testimonials .slider .left-btn {
   bottom: -160px;
   left: -630px;
-  background-image: url("./images/left-arrow-slider.svg");
+  background-image: url("./images/left-arrow.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -601,7 +602,7 @@ section.no-padding {
 .left-btn {
   bottom: -160px;
   left: -630px;
-  background-image: url("./images/left-arrow-slider.svg");
+  background-image: url("./images/left-arrow.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -825,7 +826,11 @@ section.no-padding {
   }
 
   .screen_shots .portfolio .first-card {
-    min-width: 100%;
+    width: 100% !important;
+  }
+
+  .banner-content .banner-about p {
+    width: 100%;
   }
 }
 

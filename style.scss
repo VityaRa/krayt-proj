@@ -236,7 +236,7 @@ section.no-padding{
       -webkit-box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
       -moz-box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
       box-shadow: 0px 30px 49px -19px rgba(34, 60, 80, 0.2);
-      min-width: 360px;
+      width: 360px;
       margin-top: auto;
       margin-bottom: auto;
     }
@@ -854,7 +854,10 @@ section.no-padding{
     width: 100% !important;
   }
   .screen_shots .portfolio .first-card {
-    min-width: 100%;
+    width: 100% !important;
+  }
+  .banner-content .banner-about p {
+    width: 100%;
   }
 }
 
